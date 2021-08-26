@@ -1,0 +1,10 @@
+<h1 [ngClass]="'two'">
+  _ngClass_
+</h1>
+<ol>
+  <li *ngFor='let array of arr; let i = index'>
+    <div class="arr" [ngClass]="cal(i)">
+        {{ array }}
+    </div>
+  </li>
+</ol>
